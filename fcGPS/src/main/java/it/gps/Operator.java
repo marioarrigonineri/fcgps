@@ -1,8 +1,7 @@
 package it.gps;
 
-import java.util.HashSet;
-import java.util.Set;
-
+import java.util.ArrayList;
+import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -11,6 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Operator {
+	// STRIPS
 	private String name="";
-	private Set<String> prec=new HashSet<String>(), add=new HashSet<String>(), del=new HashSet<String>();
+	private List<String> prec=new ArrayList<String>(), 
+			add=new ArrayList<String>(), del=new ArrayList<String>();
 }
